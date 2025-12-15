@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaTech - Inovação em Smartphones</title>
+  <link rel="stylesheet" href="./STYLE.PROJETOGIT.CSS">
+  <link rel="icon" href="img/logo.svg">
+</head>
+
+<body>
+  <header>
+    <div class="container header-content">
+      <img src="/projetostarbacks/objects.png" alt="NovaTech Logo"
+        class="logo">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h1>NovaTech X1</h1>
+      <p>O futuro da tecnologia na palma da sua mão.</p>
+      <a href="#produtos" class="btn-banner">Conheça</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="produtos" class="produtos-section container">
+      <h2>Nossos Produtos</h2>
+      <div class="produtos-grid">
+        <div class="produto-card">
+          <img src="./PROJETO2/4609490.jpg  " alt="Smartphone X1">
+          <h3>NovaTeh X1</h3>
+          <p>Processador Octa-core, 5G, Câmera 108MP</p>
+          <a href="#" class="btn-produto">Detalhes</a>
+        </div>
+        <div class="produto-card">
+          <img src="/PROJETO2/58ad848e-22e0-49e8-9d9c-2addb80952aa.jpg" alt="Smartphone X1 Pro">
+          <h3>NovaTech X1 Pro</h3>
+          <p>Tela AMOLED 120Hz, Bateria 6000mAh, 5G</p>
+          <a href="#" class="btn-produto">Detalhes</a>
+        </div>
+        <div class="produto-card">
+          <img src="./PROJETO2/96c52af7-8424-47cd-a3ec-4600b1d7c619.jpg  " alt="Smartphone X1 Ultra">
+          <h3>NovaTech X1 Ultra</h3>
+          <p>Zoom óptico 10x, IA avançada, 512GB</p>
+          <a href="#" class="btn-produto">Detalhes</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 NovaTech. Todos os direitos reservados.</p>
+      <div class="social">
+        <a href=""><img src="./projetostarbacks/icons8-facebook-novo-100.png" alt="Facebook"></a>
+        <a href=""><img src="./projetostarbacks/icons8-instagram-100.png" alt="Instagram"></a>
+        <a href=""><img src="./projetostarbacks/icons8-twitterx-100.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu mobile toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('open');
+    });
+  </script>
+</body>
+
+</html>
